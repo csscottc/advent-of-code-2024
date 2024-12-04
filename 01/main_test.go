@@ -5,12 +5,11 @@ import (
 	"testing"
 )
 
-func TestSmallestNumber(t *testing.T) {
-	numbers := []int{42, 32, 10, 5, 11, 9}
-	result := SmallestNumber(numbers)
-	expected := 5
+func TestDiff(t *testing.T) {
+	expected := 3
+	result := Diff(5, 2)
 	if result != expected {
-		t.Errorf("SmallestNumber(%d) = %d, want %d", numbers, result, expected)
+		t.Errorf("Diff(%d,%d) = %d want %d", 5, 2, result, expected)
 	}
 }
 func TestSortArray(t *testing.T) {
